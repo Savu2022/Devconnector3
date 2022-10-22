@@ -5,45 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Raleway"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">DevConnector</a>
-      <a href="profiles.html">Developers</a>
-      <a href="signup.html">Signup</a>
-      <a href="signin.html">SignIn</a>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="index.html"><i class="fas fa-code"></i> DevConnector</a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
     </nav>
-
-    <section>
-        <h1>Add Experience</h1>
-        <p>Add any developer/programming positions that you have had in the past</p>
-        <small>*= required data</small>
+    <section class="container">
+        <h1 class="large text-primary">Add an Experience</h1>
+        <p class="lead"><i class="fas fa-solid fa-code-branch"></i> Add any developer/programming positions that you have had in the past</p>
+        <form class="form" action="Add-Experience.html">
+        <div class="form-group">
+        </form>
+        <small class="form-text">* = required field</small>
         <form>
-          <div>
+          <div class="form-group">
             <input type="text" name="jobtitle" placeholder="* Job Title">
           </div>
-          <div>
+          <div class="form-group">
             <input type="text" name="Company" placeholder="* Company">
           </div>
-          <div>
+          <div class="form-group">
             <input type="text" name="Location" placeholder="Location">
           </div>
           <h4>From date</h4>
-          <div>
+          <div class="form-group">
             <input type="date" name="from date" placeholder="mm/dd/yyyy">
           </div>
-          <div>
+          <div class="form-group">
             <input type="checkbox" name="Current Job" placeholder="Current Job"/>
-        <div><p>Current Job</p></div>
+        <div class="form-group"><p>Current Job</p></div>
         </div>
           <h4>To date</h4>
-          <div>
+          <div class="form-group">
             <input type="date" name="from date" placeholder="mm/dd/yyyy" >
         </div>
-          <div>
+          <div class="form-group">
             <textarea placeholder="Job Description" name="jobdescription"></textarea>
           </div>
         </div>
-        <input type="submit" />
-        <a href="dashboard.html">Go Back</a>
-        </form>
+      </form>
+        <div class="container">
+        <button class="btn btn-primary"type="submit">Submit</button>
+        <p class="my-1">
+        <a href="dashboard.html" class="btn
+        btn-light"> Go Back</a></p>
+      </div>

@@ -128,7 +128,7 @@ img {
 
 .btn {
   display: inline-block;
-  background: var(--light-color);
+  background: var(--dark-color);
   color: #333;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
@@ -234,7 +234,7 @@ img {
   height: 100%;
 }
 
-/* Forms */
+/* Forms out css class .form-group : child class / inner class */
 .form .form-group {
   margin: 1.2rem 0;
 }
@@ -331,17 +331,6 @@ button {
 }
 
 /* Text Styles */
-.x-large {
-  font-size: 3rem;
-}
-
-.large {
-  font-size: 2rem;
-}
-
-.lead {
-  font-size: 1rem;
-}
 
 .navbar ul {
   text-align: center;
@@ -356,11 +345,12 @@ button {
   display: none;
 }
 
-/* Landing Page */
-.landing {
+ /*landing page*/
+ .landing {
   position: relative;
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  background: url('../images/showcase.jpg');
   height: 100vh;
+
 }
 
 .landing-inner {
@@ -601,3 +591,15 @@ button {
     padding: 0.3rem 0.4rem;
   }
 }
+  /* profile related css classes */
+  .profile {
+
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items : center;
+  grid-gap : 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
