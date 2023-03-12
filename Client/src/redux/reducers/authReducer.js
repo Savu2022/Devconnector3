@@ -1,4 +1,4 @@
-import { USER_LOADED, REGISTER_SUCCESS, REGISTER_FAIL } from "../../components/types";
+import { USER_LOADED, REGISTER_SUCCESS, REGISTER_FAIL, LOGOUT } from "../types";
 // it is used to hold and manipulate the user related states in store.
 // all auth related operations / user related operaations like  register , login  , loading current user info. etc.
 const initialState = {
@@ -14,6 +14,14 @@ export default (state = initialState, action) => {
   // data : payload
   const { type, payload } = action;
   switch (type) {
+    case LOGOUT:
+      localStorage.removeItem("token");
+      return {
+        token: null,
+        isAuthenticated: null,
+        loading: true,
+        user: null,
+      };
     case USER_LOADED:
       // to load the user info
       return { ...state, isAuthenticated: true, loading: false, user: payload };

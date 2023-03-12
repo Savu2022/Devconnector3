@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import DashboardAction from "./DashboardAction";
-import { getCurrentProfile } from "../../actions/profileAction";
+import { getCurrentProfile } from "../../redux/actions/profileAction";
 import { Link } from "react-router-dom";
 export const Dashboard = ({
   getCurrentProfile,

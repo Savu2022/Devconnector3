@@ -1,4 +1,4 @@
-import { REMOVE_ALERT, SET_ALERT } from "../../components/types";
+import { REMOVE_ALERT, SET_ALERT } from "../types";
 
 const initialState = [];
 export default (state = initialState, action) => {

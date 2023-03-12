@@ -128,13 +128,13 @@ img {
 
 .btn {
   display: inline-block;
-  background: var(--dark-color);
+  background: var(--light-color);
   color: #333;
-  padding: 1rem 2rem;
-  font-size: 1.4rem;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
-  margin-right: 0.7rem;
+  margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
 }
@@ -209,20 +209,6 @@ img {
   opacity: 0.8;
 }
 
-.button {
-  background-color: #00ABB3; /* blue */
-  border: none;
-  border-radius: 4px;
-  color: white;
-  padding: 15px 300px;
-  text-align: center;
-  text-decoration: none;
-  display: inline;
-  font-size: 20px;
-  margin: 1px 10px;
-  cursor: pointer;
-}
-
 .bg-light,
 .badge-light {
   border: #ccc solid 1px;
@@ -248,16 +234,14 @@ img {
   height: 100%;
 }
 
-/* Forms out css class .form-group : child class / inner class */
+/* Forms */
 .form .form-group {
   margin: 1.2rem 0;
-  color : EAEAEA rgb(234, 234, 234);
 }
 
 .form .form-text {
   display: block;
-  border-radius: 0px;
-  margin-top: 0rem;
+  margin-top: 0.3rem;
   color: #888;
 }
 
@@ -268,11 +252,10 @@ img {
 .form select,
 .form textarea {
   display: block;
-  width: 90%;
-  padding: 0.8rem;
-  font-size: 1.4rem;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
 .form input[type='submit'],
@@ -280,14 +263,13 @@ button {
   font: inherit;
 }
 
-
 .form .social-input {
   display: flex;
 }
 
 .form .social-input i {
-  padding: 2rem;
-  width: 2rem;
+  padding: 0.5rem;
+  width: 4rem;
 }
 
 .form .social-input i.fa-twitter {
@@ -321,12 +303,12 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0.7rem 2rem;
   position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 0px var(--primary-color);
+  border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
 }
 
@@ -336,7 +318,7 @@ button {
 
 .navbar a {
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.45rem;
   margin: 0 0.25rem;
 }
 
@@ -348,33 +330,17 @@ button {
   margin-right: 0.6rem;
 }
 
-/* Text Styles */
-
-.navbar ul {
-  text-align: center;
-  justify-content: center;
-}
-
-.navbar h1 {
-  margin-bottom: 0rem;
-}
-
-.navbar .welcome {
-  display: none;
-}
-
- /*landing page*/
- .landing {
+/* Landing Page */
+.landing {
   position: relative;
-  background: url('../images/showcase.jpg');
+  background: url('../images/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
-
 }
 
 .landing-inner {
   color: #fff;
   height: 100%;
-  width: 100%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -386,7 +352,7 @@ button {
 /* Profiles Page */
 .profile {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 4fr 2fr;
   align-items: center;
   grid-gap: 2rem;
   padding: 1rem;
@@ -608,16 +574,5 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
-}
-  /* profile related css classes */
-  .profile {
-
-  display: grid;
-  grid-template-columns: 2fr 4fr 2fr;
-  align-items : center;
-  grid-gap : 2rem;
-  padding: 1rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
 }
 

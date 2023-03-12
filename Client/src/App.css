@@ -340,7 +340,7 @@ button {
 /*Landing Page */
 .landing {
   position: relative;
-  background: url("../assets/img/showcase.jpg") no-repeat center center/cover;
+  background: url("./assets/img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -917,7 +917,7 @@ button {
 /*Landing Page */
 .landing {
   position: relative;
-  background: url("../assets/img/showcase.jpg") no-repeat center center/cover;
+  background: url("./assets/img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 
