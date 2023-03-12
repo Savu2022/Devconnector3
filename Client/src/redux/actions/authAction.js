@@ -2,17 +2,18 @@
 // login
 // loading current user
 import axios from "axios";
-import { REGISTER_SUCCESS } from "../types";
+import { REGISTER_SUCCESS, USER_LOADED, USER_ERROR } from "../redux/types";
 import { setAlert } from "./alertAction";
-import api from "../../utils/api";
+import api from "../utils/api";
 
 export const loadUser = () => async (dispatch) => {
   try {
-  const res = await api.get("/auth"); // we have to provide the token ?
-} catch (err){
-  dispatch({ type: USER_LOADED, payload: res.data });
-  dispatch({ type: USER_ERROR });
-};
+    const res = await api.get("/auth"); // we have to provide the token ?
+    dispatch({ type: USER_LOADED, payload: res.data });
+  } catch (err) {
+    console.log(err);
+    dispatch({ type: USER_ERROR });
+  }
 };
 export const register =
   ({ name, email, password }) =>

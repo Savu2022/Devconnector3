@@ -1,11 +1,12 @@
-import { REMOVE_ALERT, SET_ALERT } from "../types";
+import { REMOVE_ALERT, SET_ALERT } from "../../components/types";
 
 const initialState = [];
 export default (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case SET_ALERT:
-        // it will brings the array.
+      console.log(JSON.stringify(payload));
+      // it will brings the array.
       return [...state, payload];
 
     case REMOVE_ALERT:
@@ -16,4 +17,3 @@ export default (state = initialState, action) => {
       return state;
   }
 };
- 

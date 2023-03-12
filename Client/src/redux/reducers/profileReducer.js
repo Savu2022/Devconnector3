@@ -6,7 +6,7 @@ import {
     GET_PROFILES,
     GET_REPOS,
     NO_REPOS,
-  } from "../types";
+  } from "../../components/types";
   
   const initialState = {
     profile: null,
@@ -63,4 +63,5 @@ import {
   }
   
   export default profileReducer;
+  
   
